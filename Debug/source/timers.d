@@ -1,4 +1,4 @@
-source/scheduler.o source/scheduler.d: ../source/scheduler.c \
+source/timers.o source/timers.d: ../source/timers.c \
  C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/scheduler.h \
  C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/timers.h \
  C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\board/board.h \
@@ -23,7 +23,9 @@ source/scheduler.o source/scheduler.d: ../source/scheduler.c \
  C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/log.h \
  C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/pwm.h \
  C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/touch_sensor.h \
- C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/color_change.h
+ C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/color_change.h \
+ ../source/log.h ../source/pwm.h ../source/touch_sensor.h \
+ C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\CMSIS/core_cm0plus.h
 
 C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/scheduler.h:
 
@@ -74,3 +76,11 @@ C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\
 C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/touch_sensor.h:
 
 C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\source/color_change.h:
+
+../source/log.h:
+
+../source/pwm.h:
+
+../source/touch_sensor.h:
+
+C:\Users\SWAPNIL\Documents\MCUXpressoIDE_11.2.0_4120\workspace\PES_Assignment_4\CMSIS/core_cm0plus.h:

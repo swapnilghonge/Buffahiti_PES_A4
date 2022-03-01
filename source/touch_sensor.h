@@ -15,8 +15,8 @@
  * master/NXP/Misc/Touch%20Sense/TSI/src
  */
 
-#ifndef TOUCH_H_
-#define TOUCH_H_
+#ifndef TOUCH_SENSOR_H_
+#define TOUCH_SENSOR_H_
 
 #include <scheduler.h>
 #include <stdio.h>
@@ -40,4 +40,4 @@ int Touch_Scan_Lh(void);
 
 int Touch_Detect(void);
 
-#endif /* TOUCH_H_ */
+#endif /* TOUCH_SENSOR_H_ */

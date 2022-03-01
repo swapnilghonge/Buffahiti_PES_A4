@@ -24,7 +24,7 @@
 #include "pin_mux.h"
 #include "log.h"
 #include "pwm.h"
-#include "touch_sonsor.h"
+#include "touch_sensor.h"
 #include "color_change.h"
 
 
