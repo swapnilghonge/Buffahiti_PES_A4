@@ -1,10 +1,13 @@
-/*
- * color_change.h
+/**
+ * @file: color_change.h
  *
- *  Created on: Mar 1, 2022
- *      Author: SWAPNIL
+ * @author: Swapnil Ghonge
+ * @date: February 25th 2022
+  *@tools: MCUXpresso IDE and FRDM-KL25Z Development Board
+ * @Credits: Arm Cortex-M based Microcontrollers by Alexander G.Dean
+ *			 Took help from Ishaan for debugging my code
+ *
  */
-
 #ifndef COLOR_CHANGE_H_
 #define COLOR_CHANGE_H_
 

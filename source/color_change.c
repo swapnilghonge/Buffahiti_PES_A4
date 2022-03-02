@@ -1,10 +1,14 @@
 /*
- * color_change.c
+ * @file: color_change.c
  *
- *  Created on: Mar 1, 2022
- *      Author: SWAPNIL
+ * @author: Swapnil Ghonge
+ * @date: February 25th 2022
+ *
+  *@tools: MCUXpresso IDE and FRDM-KL25Z Development Board
+ * @Credits: Arm Cortex-M based Microcontrollers by Alexander G.Dean
+ *			 Took help from Ishaan for debugging my code
+ *
  */
-
 #include "color_change.h"
 
 extern int start_red;
@@ -38,7 +42,7 @@ void led_rgb(unsigned int r,unsigned int g, unsigned int b)
 }
 
 /********************************
- * @brief: This function stores the value of Color
+ * @brief: This function stores the value of Color when changed
  * @input: NULL
  * @ouptput: NULL
  ********************************/
