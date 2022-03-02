@@ -6,11 +6,10 @@
  * @author: Swapnil Ghonge
  * @date: February 25th 2022
  *
- * @tools: MCUXpresso IDE and FRDM-KL25Z Development Board
- * @Credits: Embedded Systems Fundamentals with
- * Arm Cortex-M based Microcontrollers (Textbook)
- * by Alexander G.Dean, GitHub repo
- * and KL25Z Reference Manual.
+   *@tools: MCUXpresso IDE and FRDM-KL25Z Development Board
+ * @Credits: Arm Cortex-M based Microcontrollers by Alexander G.Dean
+ *			 Took help from Ishaan for debugging my code
+ *
  */
 
 #include <scheduler.h>
@@ -26,6 +25,11 @@
 #include "pwm.h"
 #include "touch_sensor.h"
 #include "color_change.h"
+
+/*
+ * Commenting done after suggestions by Ishaan
+ */
+
 
 int main(void)
 {

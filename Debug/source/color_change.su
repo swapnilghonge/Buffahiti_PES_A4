@@ -1,2 +1,2 @@
-color_change.c:20:6:led_rgb	40	static
-color_change.c:30:6:color_change	16	static
+color_change.c:29:6:led_rgb	40	static
+color_change.c:48:6:color_change	16	static

@@ -1,20 +1,28 @@
-/*
- * @file: touch.c
+/**
+ * @file: touch_sensor.c
+ * @brief: This file contains 3 functions Touch_Init(), Touch_Scan_Lh() and Touch_Detect(void)
  *
- * @author: Swapnil Ghonge
+ *	@author: Swapnil Ghonge
  * @date: February 25th 2022
  *
  * @tools: MCUXpresso IDE and FRDM-KL25Z Development Board
- * @Credits: Embedded Systems Fundamentals with
- * Arm Cortex-M based Microcontrollers (Textbook)
- * by Alexander G.Dean, GitHub repo and
- * KL25Z Reference Manual.
+ * @Credits: Arm Cortex-M based Microcontrollers by Alexander G.Dean
+ * @Link: https://github.com/alexander-g-dean/ESF/tree/master/NXP/Misc/Touch%20Sense/TSI/src
+ *
  */
-
 #include "touch_sensor.h"
 
-
+/*
+ * Commenting done after suggestions by Ishaan
+ */
 uint32_t touch_val;
+
+/******************************************************************
+ * @brief: this function sets the clock of the touch sensor and port to initialize
+ *
+ * @param: NULL
+ * @return:  NULL
+ *******************************************************************/
 
 void Touch_Init(void)
 {
@@ -29,6 +37,13 @@ void Touch_Init(void)
 			TSI_GENCS_EOSF_MASK; 			//writing one to clear the end of scan flag
 }
 
+/*************************************************************
+ * @brief: function return the value of change in capcitance  when we touch the sensor
+ * @param: NULL
+ * @return: difference of scan value and offset
+ *
+ ***************************************************************/
+
 int Touch_Scan_Lh(void)
 {
 	unsigned int scan=0; 							//initializing the value of scan as '0'
@@ -39,14 +54,19 @@ int Touch_Scan_Lh(void)
 	TSI0->GENCS |= TSI_GENCS_EOSF_MASK; 			//writing one to clear the end of the flag
 	return scan;
 }
-
+/**********************************************************
+ * @brief: This function returns 1 when value the value is greater then 640
+ * @param: NULL
+ * @return: 1 when the touch value>640 else returns 0
+ *
+ ***********************************************************/
 int Touch_Detect(void)
 {
 	touch_val=0;
-	touch_val=Touch_Scan_Lh();
-	if(touch_val>650)
+	touch_val=Touch_Scan_Lh(); // putting touch value in  touch_val
+	if(touch_val>640)
 	{
-		return 1;
+		return 1;				// returns 1 when touch value is greater then 640
 	}
-	return 0;
+	return 0;					// return 0 in every other case
 }

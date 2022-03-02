@@ -3,11 +3,10 @@
  *
  * @author: Swapnil Ghonge
  * @date: February 22th 2022
- * @tools: MCUXpresso IDE and FRDM-KL25Z Development Board
- * @Credits: Embedded Systems Fundamentals with
- * Arm Cortex-M based Microcontrollers (Textbook)
- * by Alexander G.Dean, GitHub repo, the code
- * and KL25Z Reference Manual
+  *@tools: MCUXpresso IDE and FRDM-KL25Z Development Board
+ * @Credits: Arm Cortex-M based Microcontrollers by Alexander G.Dean
+ *			 Took help from Ishaan for debugging my code
+ *
  */
 
 #ifndef scheduler_H_
@@ -27,25 +26,32 @@
 #include "touch_sensor.h"
 #include "color_change.h"
 
+/*
+ * Commenting done after suggestions by Ishaan
+ */
 
-#define STOP_RED 	(0x61)
-#define STOP_GREEN 	(0x1E)
-#define STOP_BLUE 	(0x3C)
 
-#define GO_RED 		(0x22)
-#define GO_GREEN 	(0x96)
-#define GO_BLUE 	(0x22)
+/*
+ * Defining the #defines values
+ */
+#define STOP_RED 		(0x61)
+#define STOP_GREEN 		(0x1E)
+#define STOP_BLUE 		(0x3C)
 
-#define WARN_RED 	(0xFF)
-#define WARN_GREEN 	(0xB2)
-#define WARN_BLUE 	(0x00)
+#define GO_RED 			(0x22)
+#define GO_GREEN 		(0x96)
+#define GO_BLUE 		(0x22)
 
-#define CROSS_RED 	(0x00)
-#define CROSS_GREEN (0x10)
-#define CROSS_BLUE 	(0x30)
+#define WARN_RED 		(0xFF)
+#define WARN_GREEN 		(0xB2)
+#define WARN_BLUE 		(0x00)
 
-#define DELAY_TRANS  (100)
-#define DELAY_CROSS 	  (1000)
+#define CROSS_RED 		(0x00)
+#define CROSS_GREEN 	(0x10)
+#define CROSS_BLUE 		(0x30)
+
+#define DELAY_TRANS  	(100)
+#define DELAY_CROSS  	(1000)
 
 #define DELAY_CROSS_ON 	(75)
 #define DELAY_CROSS_OFF (100)
@@ -58,6 +64,9 @@
 #define DELAY_WARNING 	(500)	//5sec stay in WARNING state in PRODUCTION mode
 #endif
 
+/*
+ * Commenting done after suggestions by Ishaan
+ */
 typedef enum
 {
 	STOP,
@@ -71,6 +80,11 @@ typedef enum
 	CROSSWALK_GO_TRANS
 }state_e;
 
+/********************************
+ * @brief: This function definition of the function of state machine
+ * @input: NULL
+ * @ouptput: NULL
+ ********************************/
 void Statemachine(void);
 
 

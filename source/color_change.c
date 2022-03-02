@@ -13,10 +13,19 @@ extern int start_green;
 extern int end_green;
 extern int start_blue;
 extern int end_blue;
+/*
+ * Commenting done after suggestions by Ishaan
+ */
+
+
 int r1,g1,b1;
 
 int time =0;
-
+/********************************
+ * @brief: This function controls the LEd color upon interrupt
+ * @input: 3 parameters r, g, b
+ * @ouptput: NULL
+ ********************************/
 void led_rgb(unsigned int r,unsigned int g, unsigned int b)
 {
 	int red=(r*48000)/255;
@@ -27,6 +36,15 @@ void led_rgb(unsigned int r,unsigned int g, unsigned int b)
 	TPM2->CONTROLS[1].CnV=green;
 	TPM0->CONTROLS[1].CnV=blue;
 }
+
+/********************************
+ * @brief: This function stores the value of Color
+ * @input: NULL
+ * @ouptput: NULL
+ ********************************/
+
+
+
 void color_change(void)
 {
 	time=Get_Timer();

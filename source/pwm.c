@@ -4,15 +4,25 @@
  * @author: Swapnil Ghonge
  * @date: February 25th 2022
  *
- * @tools: MCUXpresso IDE and FRDM-KL25Z Development Board
- * @Credits: Embedded Systems Fundamentals with
- * Arm Cortex-M based Microcontrollers (Textbook)
- * by Alexander G.Dean, GitHub repo
- * and KL25Z Reference Manual.
+  *@tools: MCUXpresso IDE and FRDM-KL25Z Development Board
+ * @Credits: Arm Cortex-M based Microcontrollers by Alexander G.Dean
+ *			 Took help from Ishaan for debugging my code
+ *
  */
 
 #include "pwm.h"
 
+/*
+ * Commenting done after suggestions by Ishaan
+ */
+
+
+
+/********************************
+ * @brief: This function initialize the PWM of Timer/PWM module
+ * @input: NULL
+ * @ouptput: NULL
+ ********************************/
 
 void Init_Pwm(void)
 {
